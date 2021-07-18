@@ -7,7 +7,7 @@
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 24px;
-  width: 561px;
+  width: 90%;
   box-shadow: 0 2px 5px 1px #e2e1e2;
 }
 
@@ -50,4 +50,10 @@
 }
 .search__buttonsHidden {
   display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .search__input {
+    width: 600px;
+  }
 }

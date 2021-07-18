@@ -30,31 +30,34 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className='home__body'>
+      <div className='home__bodyLogo'>
         <img
           src='https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png'
           alt='google logo'
-          className='google-logo'
         />
+      </div>
 
+      <div className='home__body'>
         <div className='home__inputContainer'>
           <Search hideButtons={false} googleHomeInput={true} />
         </div>
       </div>
-      <footer className='home__footerFirst'>India</footer>
-      <footer className='home__footerSecond'>
-        <div className='footerLeft'>
-          <Link to='/about'>About</Link>
-          <Link to='/advertising'>Advertising</Link>
-          <Link to='/business'>Business</Link>
-          <Link to='/howsearchworks'>How Search Works</Link>
+      <div className='home__footer'>
+        <div className='home__footerFirst'>India</div>
+        <div className='home__footerSecond'>
+          <div className='footerLeft'>
+            <Link to='/about'>About</Link>
+            <Link to='/advertising'>Advertising</Link>
+            <Link to='/business'>Business</Link>
+            <Link to='/howsearchworks'>How Search Works</Link>
+          </div>
+          <div className='footerRight'>
+            <Link to='privacy'>Privacy</Link>
+            <Link to='terms'>Terms</Link>
+            <Link to='settings'>Settings</Link>
+          </div>
         </div>
-        <div className='footerRight'>
-          <Link to='privacy'>Privacy</Link>
-          <Link to='terms'>Terms</Link>
-          <Link to='settings'>Settings</Link>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 };
