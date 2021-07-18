@@ -1,0 +1,127 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.home__header {
+  margin-left: 79%;
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  min-width: 13vw;
+}
+.home__header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+.home__header a:hover {
+  text-decoration: underline;
+}
+
+.home__header > a:nth-last-of-type(2),
+.home__header > a:nth-last-of-type(1) {
+  text-decoration: none;
+  color: gray;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.home__header > a:nth-last-of-type(2):hover,
+.home__header > a:nth-last-of-type(1):hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+.home__header > a:nth-last-of-type(1) {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.home__body > img {
+  object-fit: contain;
+  height: 150px;
+}
+
+.home__body {
+  flex: 1;
+  /* margin-top: 10%; */
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+.home__footerFirst {
+  height: 7vh;
+  background-color: #f2f2f2;
+  color: #7c8386;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+.home__footerSecond {
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1px solid #b5babd;
+  background-color: #f2f2f2;
+  padding: auto 1.5rem;
+  font-size: 14px;
+}
+.home__footerSecond a {
+  text-decoration: none;
+  color: #7c8386;
+  padding-right: 1.5rem;
+}
+.footerLeft {
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.footerRight {
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+@media screen and (max-width: 330px) {
+  .google-logo {
+    width: 300px;
+    height: 100px;
+    margin-left: 120px;
+  }
+  .home__body {
+    margin-top: 20vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .google-logo {
+    width: 300px;
+    height: 100px;
+    margin-left: 40px;
+  }
+  .home__body {
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .google-logo {
+    width: 550px;
+    height: 100px;
+    margin-left: 100px;
+  }
+  .home__body {
+    margin-top: 20vh;
+  }
+}
