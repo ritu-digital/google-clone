@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import AppsIcon from '@material-ui/icons/Apps';
 import { Avatar, Tooltip } from '@material-ui/core';
 import Search from '../components/Search';
+import MenuIcon from '@material-ui/icons/Menu';
+import Sidebar from '../Sidebar';
 
 const Home = () => {
+  const [sidebarMenu, setSidebarMenu] = useState(false);
+  const sidebarHandler = () => {
+    setSidebarMenu(!sidebarMenu);
+  };
   return (
     <div className='home'>
+      <div className='home__headerMenuButton'>
+        <MenuIcon
+          style={{ color: 'gray', fontSize: '2rem' }}
+          onClick={sidebarHandler}
+          className='sidebarMenuIcon'
+        />
+      </div>
+      <Sidebar sidebarMenu={sidebarMenu} sidebarHandler={sidebarHandler} />
       <div className='home__header'>
         <Link to='gmail'>Gmail</Link>
         <Link to='images'>Images</Link>

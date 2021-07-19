@@ -3,6 +3,13 @@
   width: 100%;
   overflow: hidden;
 }
+.sidebarMenuIcon {
+  position: absolute;
+  top: 5vh;
+  left: 20px;
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
 .home__header {
   display: flex;
   height: 15vh;
@@ -120,5 +127,19 @@
   .footerRight {
     margin: 0 auto;
     padding-bottom: 0;
+  }
+  .home__header > a:nth-of-type(2) {
+    position: absolute;
+    top: 6vh;
+    left: 12%;
+    padding-left: 0.6rem;
+  }
+  .home__header > a:nth-of-type(1) {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sidebarMenuIcon {
+    visibility: hidden;
   }
 }

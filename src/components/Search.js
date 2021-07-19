@@ -36,7 +36,10 @@ const Search = ({ hideButtons, googleHomeInput }) => {
           <>
             <SearchIcon className='search__inputIcon' />
             <input value={input} onChange={inputHandler} />
-            <MicIcon className='search__micIcon' style={{ color: '#4285F4' }} />
+            <MicIcon
+              className='search__micIcon'
+              style={{ color: '#4285F4', marginLeft: '-3rem' }}
+            />
           </>
         ) : (
           <>
